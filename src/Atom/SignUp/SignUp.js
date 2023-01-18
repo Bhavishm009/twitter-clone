@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from './google.png'
 import style from './SignUp.module.css'
 
 function SignUp({SignUpTxt,Image,handleClick}) {

@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { FaTwitter } from "react-icons/fa";
-//import Inputfield from "../../Atom/Input/Input";
 import SignUp from "../../Atom/SignUp/SignUp";
-import { json, Link } from "react-router-dom";
 import style from "./Account.module.css";
 import Input from "../../Atom/Input/Input";
 import MonthDropdown from "./Month";
@@ -82,7 +80,7 @@ localStorage.setItem("user", JSON.stringify(data))
        <span><MonthDropdown /></span> 
         <span><DayDropdown/></span>
         <span><YearDropdown /></span>
-        </div>
+        </div>
         </div>
 
         <span className={style.login}>
@@ -93,7 +91,7 @@ localStorage.setItem("user", JSON.stringify(data))
   );
 }
 
-export default Account;
+export default Account;
 
 
 

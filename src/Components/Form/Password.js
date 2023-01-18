@@ -1,7 +1,6 @@
 
 import React from 'react'
 import {FaTwitter} from 'react-icons/fa';
-import Inputfield from '../../Atom/Input/Input';
 import SignUp from '../../Atom/SignUp/SignUp';
 import { Link } from 'react-router-dom';
 import style from './Password.module.css'
@@ -15,7 +14,7 @@ function Password({label}) {
     <form className={style.form}>
         <FaTwitter style={{color:"blue",fontSize:"32px",marginTop:"10px"}}/>
         <h1 style={{color:"white"}}>Enter your Password</h1>
-         <Input placeholder={"password"}/>
+         <Input placeholder={"Password"}/>
        <span  className={style.login}>
        <SignUp
          SignUpTxt={"Log in"}/>
