@@ -1,6 +1,3 @@
-.login{
-    margin-top: 100px;
-}
 .form{
     width: 36rem;
     height: 34rem;
@@ -27,22 +24,12 @@
     margin-top:30px;
     font-weight: 300;
 }
-.Dob{
+.para{
     width: 20rem;
-    height: 5rem;
- 
+    padding: 5px;
 }
-.Dob h5{ 
-     margin-top: 0;
-}
-.date{
-    display: flex;
-    justify-content: space-around;
-}
-
-.useemail:hover{
-   text-decoration: underline;
-   color: #2997f1;
+.para h5{
+    font-weight: 200; 
 }
 @media  (max-width:720px) {
     .main{
