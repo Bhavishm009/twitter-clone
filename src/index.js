@@ -3,11 +3,49 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Password from './Components/Form/Password';
+import Registration from './Components/Registration/Registration';
+import Form from './Components/Form/Form';
+import Account from './Components/Account/Account';
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App/>,
+  },
+  {
+    path: "/Password",
+    element: <Password />,
+  },
+  {
+    path: "/Registration",
+    element: <Registration />,
+  },
+  {
+    path: "/Form",
+    element: <Form />,
+  },
+  {
+    path: "/Account",
+    element: <Account />,
+  },
+ 
+
+]);
+
 root.render(
   <React.StrictMode>
-    <App />
+   <RouterProvider router={router} />
   </React.StrictMode>
 );
 
